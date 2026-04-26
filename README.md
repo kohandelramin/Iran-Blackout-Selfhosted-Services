@@ -1,6 +1,7 @@
 # Iran Blackout Self Hosted Services
 
 A practical repo based on my own experience running Docker based communication services on a Linux server in Iran, especially when international internet access becomes unstable or partially unavailable.
+
 فارسی: [README.fa.md](README.fa.md)
 ## Why I made this
 When access to global services gets unreliable, the first things that break for small teams are usually communication, file sharing, meetings, voice chat, and streaming. I wanted one place where I can keep my working setup, not as a perfect production platform, but as a practical survival stack.
@@ -47,17 +48,22 @@ For public sharing, never commit real passwords, real private keys, real admin t
 ```
 ## Fast start
 ```bash
-git clone https://github.com/YOUR_USERNAME/iran-blackout-selfhosted-services.git
+git clone [https://github.com/YOUR_USERNAME/iran-blackout-selfhosted-services.git](https://github.com/kohandelramin/Iran-Blackout-Selfhosted-Service)
 cd iran-blackout-selfhosted-services
 cp .env.example .env
 nano .env
+```
 Prepare the Linux server:
+```bash
 sudo bash scripts/00-host-bootstrap.sh
 sudo bash scripts/01-disable-ipv6.sh
 sudo bash scripts/02-ufw-basic.sh
+```
 Start one service:
+```bash
 cd services/filebrowser
 docker compose up -d
+```
 ## Suggested domain layout
 Use one root domain and subdomains:
 meet.example.ir       Jitsi
