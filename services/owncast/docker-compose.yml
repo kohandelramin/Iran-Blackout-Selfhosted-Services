@@ -1,0 +1,12 @@
+services:
+  owncast:
+    image: owncast/owncast:latest
+    container_name: owncast
+    restart: unless-stopped
+    ports:
+      - "8089:8080"
+      - "1935:1935"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - TZ=${TZ:-Asia/Tehran}

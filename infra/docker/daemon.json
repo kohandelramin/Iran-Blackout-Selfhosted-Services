@@ -1,0 +1,15 @@
+{
+  "registry-mirrors": [
+    "https://docker.arvancloud.ir",
+    "https://mirror-docker.runflare.com",
+    "https://docker.iranserver.com",
+    "https://docker-mirror.liara.ir"
+  ],
+  "max-concurrent-downloads": 5,
+  "max-concurrent-uploads": 5,
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "10m",
+    "max-file": "3"
+  }
+}
