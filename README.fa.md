@@ -49,7 +49,7 @@ English: [README.md](README.md)
 ```
 ## شروع سریع
 ```bash
-git clone https://github.com/kohandelramin/Iran-Blackout-Selfhosted-Service.git
+git clone https://github.com/kohandelramin/Iran-Blackout-Selfhosted-Services.git
 cd iran-blackout-selfhosted-services
 cp .env.example .env
 nano .env
