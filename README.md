@@ -64,14 +64,19 @@ Start one service:
 cd services/filebrowser
 docker compose up -d
 ```
-## Suggested domain layout
-Use one root domain and subdomains:
-meet.example.ir       Jitsi
-voice.example.ir      TeamSpeak 3
-chat.example.ir       Mattermost
-stream.example.ir     Owncast
-files.example.ir      FileBrowser
-In ArvanCloud DNS, create `A` records pointing each subdomain to your server IPv4.
+## Suggested Domain Layout
+
+Use a single root domain with dedicated subdomains for each service:
+
+| Subdomain             | Service        |
+|----------------------|---------------|
+| meet.example.ir      | Jitsi         |
+| voice.example.ir     | TeamSpeak 3   |
+| chat.example.ir      | Mattermost    |
+| stream.example.ir    | Owncast       |
+| files.example.ir     | FileBrowser   |
+
+In ArvanCloud DNS, create `A` records for each subdomain, all pointing to your server’s IPv4 address.
 ## Important blackout notes
 - Keep Docker images pulled before things get worse.
 - Keep a local backup of compose files and `.env` files.
