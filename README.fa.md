@@ -51,19 +51,26 @@ git clone https://github.com/YOUR_USERNAME/iran-blackout-selfhosted-services.git
 cd iran-blackout-selfhosted-services
 cp .env.example .env
 nano .env
+```
 آماده‌سازی سرور:
+```bash
 sudo bash scripts/00-host-bootstrap.sh
 sudo bash scripts/01-disable-ipv6.sh
 sudo bash scripts/02-ufw-basic.sh
+```
 اجرای یک سرویس:
+```bash
 cd services/filebrowser
 docker compose up -d
+```
 ## ساختار پیشنهادی دامنه
+```bash
 meet.example.ir       Jitsi
 voice.example.ir      TeamSpeak 3
 chat.example.ir       Mattermost
 stream.example.ir     Owncast
 files.example.ir      FileBrowser
+```
 در ArvanCloud برای هر ساب‌دامین یک رکورد `A` بساز و آن را به IPv4 سرور وصل کن.
 ## نکته‌های مهم برای شرایط اختلال
 - قبل از بدتر شدن وضعیت اینترنت، Docker image ها را pull کن.
