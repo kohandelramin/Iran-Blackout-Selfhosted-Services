@@ -5,7 +5,7 @@ This repo is written like my own notes. I wanted a small set of services that co
 The idea is not to replace the whole internet. The idea is to keep basic communication alive:
 
 - A meeting room with Jitsi
-- A voice room with TeamSpeak
+- A voice room with TeamSpeak 3
 - A chatroom with Mattermost
 - A simple stream with Owncast
 - A file sharing panel with FileBrowser

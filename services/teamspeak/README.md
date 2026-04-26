@@ -1,6 +1,6 @@
-# TeamSpeak
+# TeamSpeak 3
 
-I use TeamSpeak as a simple low latency Discord voice alternative.
+I use TeamSpeak 3 as a simple low latency Discord voice alternative. This repo is for the classic TeamSpeak 3 server, not the newer TeamSpeak 6 beta server.
 
 ## Start
 
@@ -9,7 +9,7 @@ mkdir -p data
 docker compose up -d
 ```
 
-Watch the logs on first run. TeamSpeak prints the first admin privilege key once:
+Watch the logs on first run. TeamSpeak 3 prints the first admin privilege key once:
 
 ```bash
 docker logs -f teamspeak
@@ -31,4 +31,8 @@ voice.example.ir:9987
 
 ## Notes
 
-For blackout use, TeamSpeak can be more stable than browser based voice chat because the client is lighter and the protocol is focused on voice.
+For blackout use, TeamSpeak 3 can be more stable than browser based voice chat because the client is lighter and the protocol is focused on voice.
+
+## Version note
+
+This Compose file uses the official `teamspeak` Docker image and accepts the TeamSpeak 3 server license with `TS3SERVER_LICENSE=accept`.

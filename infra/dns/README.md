@@ -26,10 +26,10 @@ Steps:
 
 For normal web services like Mattermost, FileBrowser, and Owncast web UI, CDN proxy can be useful.
 
-For Jitsi and TeamSpeak, be careful:
+For Jitsi and TeamSpeak 3, be careful:
 
 - Jitsi media needs UDP 10000.
-- TeamSpeak voice uses UDP 9987.
+- TeamSpeak 3 voice uses UDP 9987.
 - Normal CDN HTTP proxy will not proxy these UDP flows like a web page.
 
 So DNS can point to the server, but voice and media ports must reach the server directly.

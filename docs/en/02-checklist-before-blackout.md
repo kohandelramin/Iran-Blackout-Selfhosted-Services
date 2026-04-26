@@ -37,7 +37,7 @@ For Jitsi, download the official release ZIP and keep a copy.
 ## Users
 
 - Mattermost users created
-- TeamSpeak admin key saved
+- TeamSpeak 3 admin privilege key saved
 - FileBrowser admin password changed
 - Owncast stream key changed
 - Jitsi URL tested with at least two people
