@@ -48,7 +48,7 @@ For public sharing, never commit real passwords, real private keys, real admin t
 ```
 ## Fast start
 ```bash
-git clone [https://github.com/YOUR_USERNAME/iran-blackout-selfhosted-services.git](https://github.com/kohandelramin/Iran-Blackout-Selfhosted-Service)
+git clone https://github.com/kohandelramin/Iran-Blackout-Selfhosted-Service
 cd iran-blackout-selfhosted-services
 cp .env.example .env
 nano .env
